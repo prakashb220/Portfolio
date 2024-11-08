@@ -509,15 +509,18 @@
         });
 
         $(document).ready(function(){
-            function countUp(target) {
+            function countUp(target, elementId) {
                 for (let i = 0; i <= target; i++) {
                     setTimeout(function() {
-                        $('#seventh_first').text(i);
+                        $('#${elementId}').text(i);
                     }, i * 100); // Each number updates every 100 ms
                 }
             }
 
-        countUp(50);
+        countUp(50, seventh_first);
+        countUp(126, seventh_second);
+        countUp(28, seventh_third);
+        countUp(86, seventh_fourth);
 
         })
     </script>
