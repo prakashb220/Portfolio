@@ -499,7 +499,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="index.js"></script>
+    
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -509,7 +509,16 @@
         });
 
         $(document).ready(function(){
-            alert("Page is Ready to see!")
+            function countUp(target) {
+                for (let i = 0; i <= target; i++) {
+                    setTimeout(function() {
+                        $('#seventh_first').text(i);
+                    }, i * 100); // Each number updates every 100 ms
+                }
+            }
+
+        countUp(50);
+
         })
     </script>
 </body>
