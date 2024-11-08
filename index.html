@@ -509,21 +509,18 @@
         });
 
         $(document).ready(function(){
-           function countUp(target, elementId, time) {
-                for (let i = 0; i <= target; i++) {
-                    setTimeout(function() {
-                        $(`#${elementId}`).text(i);
-                    }, i * time); // Each number updates every 100 ms
-                }
-            }
-            
-            // Call countUp for four different IDs
-            countUp(150, 'seventh_first', 100);
-            countUp(269, 'seventh_second', 200);
-            countUp(190, 'seventh_third', 250);
-            countUp(712, 'seventh_fourth', 300);
+          function countNumbers(target,elementId, time){
+              for (i=0; i>target; i++){
+                  setTimeout(function(){
+                      $("#${elementId}").text(i);
+                  }, i * time)
+              }
+          }
 
-
+        countNumbers(126, 'seventh_first', 120)
+        countNumbers(231, 'seventh_second', 140)
+        countNumbers(291, 'seventh_third', 170)
+        countNumbers(187, 'seventh_fourth', 160)
         })
     </script>
 </body>
