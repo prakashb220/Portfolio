@@ -512,7 +512,7 @@
           function countNumbers(target,elementId, time){
               for (let i=0; i<= target; i++){
                   setTimeout(function(){
-                      $("#${elementId}").text(i);
+                      $(`#${elementId}`).text(i);
                   }, i * time)
               }
           }
