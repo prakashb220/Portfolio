@@ -513,15 +513,15 @@
                 for (let i = 0; i <= target; i++) {
                     setTimeout(function() {
                         $(`#${elementId}`).text(i);
-                    }, i * 100); // Each number updates every 100 ms
+                    }, i * time); // Each number updates every 100 ms
                 }
             }
             
             // Call countUp for four different IDs
-            countUp(50, 'seventh_first');
-            countUp(75, 'seventh_second');
-            countUp(100, 'seventh_third');
-            countUp(125, 'seventh_fourth');
+            countUp(150, 'seventh_first', 100);
+            countUp(269, 'seventh_second', 200);
+            countUp(190, 'seventh_third', 250);
+            countUp(712, 'seventh_fourth', 300);
 
 
         })
